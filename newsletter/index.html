@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Newsletter iOS · Nico Valentini</title>
+  <meta name="description" content="Una pregunta de entrevista iOS por semana, con la respuesta verificada. Y lo nuevo de Swift, en criollo.">
+  <meta property="og:title" content="Newsletter iOS · Nico Valentini">
+  <meta property="og:description" content="Una pregunta de entrevista iOS por semana, con la respuesta verificada. Y lo nuevo de Swift, en criollo.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nicovma.github.io/newsletter/">
+  <meta name="theme-color" content="#F3F5F6">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="kicker"><a href="../">Nico Valentini</a> · Newsletter</p>
+      <h1 class="headline">Una pregunta de entrevista iOS por semana, con la respuesta verificada. Y lo nuevo de Swift, en criollo.</h1>
+      <p class="lede">Llega los domingos. Gratis, y te das de baja con un clic.</p>
+    </header>
+
+    <!-- Las clases ml-* y la estructura las necesita webforms.min.js de MailerLite para enviar sin salir de la página. -->
+    <div id="mlb2-46951473" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-46951473 signup">
+      <div class="row-form">
+        <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2699248/forms/200877085131015490/subscribe" data-code="" method="post" target="_blank">
+          <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+            <label class="sr-only" for="ml-email">Email</label>
+            <input id="ml-email" aria-required="true" type="email" name="fields[email]" placeholder="Tu email" autocomplete="email">
+          </div>
+          <input type="hidden" name="ml-submit" value="1">
+          <div class="ml-form-embedSubmit">
+            <button type="submit" class="primary button">Suscribirme</button>
+            <button disabled="disabled" style="display: none;" type="button" class="loading button">Enviando…</button>
+          </div>
+          <input type="hidden" name="anticsrf" value="true">
+        </form>
+      </div>
+      <div class="row-success" style="display: none" role="status">
+        <p>Listo. Te mandé un mail para confirmar la suscripción: revisalo, a veces cae en spam.</p>
+      </div>
+    </div>
+
+    <section aria-labelledby="trae-title">
+      <h2 id="trae-title">Qué trae</h2>
+      <ul class="rows">
+        <li><p>Una pregunta real de entrevista, con la respuesta probada en código.</p></li>
+        <li><p>Lo más importante de la semana en Swift, SwiftUI y Xcode, explicado sin vueltas.</p></li>
+        <li><p>Lo que cambió desde la WWDC y te pueden preguntar.</p></li>
+      </ul>
+    </section>
+
+    <footer><a href="../">nicovma.github.io</a></footer>
+  </main>
+
+  <script>
+    function ml_webform_success_46951473() {
+      var $ = ml_jQuery || jQuery;
+      $('.ml-subscribe-form-46951473 .row-success').show();
+      $('.ml-subscribe-form-46951473 .row-form').hide();
+    }
+  </script>
+  <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519" type="text/javascript"></script>
+  <script>
+    fetch("https://assets.mailerlite.com/jsonp/2699248/forms/200877085131015490/takel")
+  </script>
+</body>
+</html>

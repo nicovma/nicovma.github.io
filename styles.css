@@ -218,3 +218,44 @@ footer {
   .page { padding-top: 96px; padding-bottom: 80px; }
   section { margin-top: 80px; }
 }
+
+/* Newsletter */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+.kicker { font-size: 14px; font-weight: 600; color: var(--sea); }
+.kicker a { color: inherit; text-decoration: none; }
+.kicker a:hover { text-decoration: underline; }
+.headline {
+  margin-top: 16px;
+  font-size: clamp(30px, 7.5vw, 42px);
+  line-height: 1.1;
+}
+.signup { margin-top: 32px; }
+.signup form { display: grid; gap: 10px; }
+.signup input[type="email"] {
+  width: 100%;
+  min-height: 50px;
+  padding: 0 16px;
+  border: 2px solid var(--mist);
+  border-radius: 12px;
+  background: #fff;
+  color: var(--navy);
+  font: inherit;
+}
+.signup input[type="email"]:focus { outline: none; border-color: var(--sea); }
+.signup .ml-error input { border-color: #B3261E; }
+.signup .button { width: 100%; border: 0; font: inherit; font-weight: 700; cursor: pointer; }
+.signup .button.loading { opacity: 0.7; cursor: default; }
+.signup .row-success p {
+  padding: 18px 20px;
+  border-radius: 14px;
+  background: var(--mist);
+  font-weight: 600;
+}
+footer a { color: inherit; }
