@@ -9,93 +9,105 @@
   <meta property="og:description" content="Native iOS apps since 2016, built from Argentina, Italy, Denmark and Australia.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://nicovma.github.io/">
-  <meta name="theme-color" content="#F3F5F6">
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="page">
-    <header class="hero">
+  <header class="nav">
+    <nav class="wrap" aria-label="Main">
+      <a class="brand" href="#"><span class="monogram" aria-hidden="true">NV</span>Nico Valentini</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Work with me</a>
+        <a class="pill" href="mailto:nicolasvalentinima@gmail.com">Contact me</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero">
       <div class="avatar">
         <span aria-hidden="true">NV</span>
-        <!-- Drop the photo at assets/avatar.jpg; until then the initials show. -->
         <img src="assets/avatar.jpg" alt="Nico Valentini" onerror="this.remove()">
       </div>
-      <h1>Nico Valentini</h1>
-      <p class="role">Senior iOS Engineer</p>
+      <h1><span>Nico Valentini</span><span class="role">Senior iOS Engineer</span></h1>
       <p class="lede">Native iOS apps since 2016, built from Argentina, Italy, Denmark and Australia.</p>
       <div class="actions">
         <a class="button primary" href="#work">Work with me</a>
-        <a class="button secondary" href="mailto:nicolasvalentinima@gmail.com">Contact me</a>
+        <a class="button secondary" href="mailto:nicolasvalentinima@gmail.com">Contact me ›</a>
       </div>
-    </header>
-
-    <section aria-labelledby="about-title">
-      <h2 id="about-title">About</h2>
-      <p>I’m an iOS engineer born in Río Colorado and based in La Plata, Argentina, where I earned my Computer Science degree at UNLP. For six years I lived and worked in Italy, Denmark and Australia, writing Swift for teams on three continents.</p>
-      <p>I like codebases that are easy to change: clear architecture, real tests, modern Swift. Now I’m back in Argentina, working remotely.</p>
-      <details class="translation" lang="es">
-        <summary>Leer en español</summary>
-        <p>Soy ingeniero iOS. Nací en Río Colorado y vivo en La Plata, donde me recibí de Licenciado en Informática en la UNLP. Durante seis años viví y trabajé en Italia, Dinamarca y Australia, escribiendo Swift para equipos de tres continentes.</p>
-        <p>Me gustan los proyectos fáciles de cambiar: arquitectura clara, tests de verdad, Swift moderno. Hoy estoy de vuelta en Argentina, trabajando remoto.</p>
-      </details>
     </section>
 
-    <section aria-labelledby="experience-title">
+    <div class="band-alt">
+      <section id="about" class="wrap split" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <div class="content prose">
+          <p>I’m an iOS engineer born in Río Colorado and based in La Plata, Argentina, where I earned my Computer Science degree at UNLP. For six years I lived and worked in Italy, Denmark and Australia, writing Swift for teams on three continents.</p>
+          <p>I like codebases that are easy to change: clear architecture, real tests, modern Swift. Now I’m back in Argentina, working remotely.</p>
+          <details class="translation" lang="es">
+            <summary>Leer en español ›</summary>
+            <div>
+              <p>Soy ingeniero iOS. Nací en Río Colorado y vivo en La Plata, donde me recibí de Licenciado en Informática en la UNLP. Durante seis años viví y trabajé en Italia, Dinamarca y Australia, escribiendo Swift para equipos de tres continentes.</p>
+              <p>Me gustan los proyectos fáciles de cambiar: arquitectura clara, tests de verdad, Swift moderno. Hoy estoy de vuelta en Argentina, trabajando remoto.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+    </div>
+
+    <section class="wrap now" aria-labelledby="now-title">
+      <a href="newsletter/">
+        <svg width="56" height="56" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="7" fill="currentColor"/><rect x="7" y="16" width="3" height="5" rx="1" style="fill: var(--ink)"/><rect x="12.5" y="12" width="3" height="9" rx="1" style="fill: var(--ink)"/><rect x="18" y="7" width="3" height="14" rx="1" fill="#0066CC"/></svg>
+        <span class="text">
+          <span id="now-title" class="label">NOW</span>
+          <span class="title">Evolución iOS</span>
+          <span class="desc">Real iOS interview questions, in Spanish. Every answer compiled and run before it’s published.</span>
+        </span>
+        <span class="go">Visit ›</span>
+      </a>
+    </section>
+
+    <section id="experience" class="wrap split" aria-labelledby="experience-title">
       <h2 id="experience-title">Experience</h2>
-      <ol class="route">
+      <ol class="content group route">
         <li>
-          <p class="years">2016–2021</p>
-          <h3>Despegar.com</h3>
-          <p class="place">Buenos Aires, Argentina</p>
-          <p>iOS for one of Latin America’s leading travel platforms.</p>
+          <span class="years">2023–now</span>
+          <div class="body"><h3>Veloce Engineering</h3><p class="place">Remote from Argentina and Australia</p><p>Senior iOS engineer and architecture consultant for teams in Australia, the US and Europe.</p></div>
         </li>
         <li>
-          <p class="years">2021–2022</p>
-          <h3>OverApp</h3>
-          <p class="place">Cagliari, Italy</p>
-          <p>FREE TO X, a mobility app for Italian highways.</p>
+          <span class="years">2022–2023</span>
+          <div class="body"><h3>Safelii</h3><p class="place">Copenhagen, Denmark</p><p>iOS client talking to connected IoT devices.</p></div>
         </li>
         <li>
-          <p class="years">2022–2023</p>
-          <h3>Safelii</h3>
-          <p class="place">Copenhagen, Denmark</p>
-          <p>iOS client talking to connected IoT devices.</p>
+          <span class="years">2021–2022</span>
+          <div class="body"><h3>OverApp</h3><p class="place">Cagliari, Italy</p><p>FREE TO X, a mobility app for Italian highways.</p></div>
         </li>
-        <li class="current">
-          <p class="years">2023–now</p>
-          <h3>Veloce Engineering</h3>
-          <p class="place">Remote from Argentina and Australia</p>
-          <p>Senior iOS engineer and architecture consultant for teams in Australia, the US and Europe.</p>
+        <li>
+          <span class="years">2016–2021</span>
+          <div class="body"><h3>Despegar.com</h3><p class="place">Buenos Aires, Argentina</p><p>iOS for one of Latin America’s leading travel platforms.</p></div>
         </li>
       </ol>
     </section>
 
-    <section id="work" aria-labelledby="work-title">
-      <h2 id="work-title">Work with me</h2>
-      <ul class="rows">
-        <li>
-          <h3>Remote iOS roles</h3>
-          <p>Senior or lead positions, full time.</p>
-        </li>
-        <li>
-          <h3>Architecture and modernization</h3>
-          <p>Moving UIKit and Objective‑C code to SwiftUI, with tests that make the change safe.</p>
-        </li>
-        <li>
-          <h3>Brand collaborations</h3>
-          <p>Only products I use myself.</p>
-        </li>
-      </ul>
-      <a class="button primary wide" href="mailto:nicolasvalentinima@gmail.com">Contact me</a>
-    </section>
+    <div class="band-alt">
+      <section id="work" class="wrap split" aria-labelledby="work-title">
+        <div class="side">
+          <h2 id="work-title">Work with me</h2>
+          <a class="button primary" href="mailto:nicolasvalentinima@gmail.com">Contact me</a>
+        </div>
+        <ul class="content group">
+          <li><h3>Remote iOS roles</h3><p>Senior or lead positions, full time.</p></li>
+          <li><h3>Architecture and modernization</h3><p>Moving UIKit and Objective‑C code to SwiftUI, with tests that make the change safe.</p></li>
+        </ul>
+      </section>
+    </div>
 
-    <section aria-labelledby="stack-title">
+    <section class="wrap split" aria-labelledby="stack-title">
       <h2 id="stack-title">iOS stack</h2>
-      <dl class="stack">
+      <dl class="content group stack">
         <div><dt>Languages</dt><dd>Swift, Objective‑C</dd></div>
         <div><dt>UI</dt><dd>SwiftUI, UIKit, Auto Layout</dd></div>
         <div><dt>Concurrency</dt><dd>async/await, Actors, Combine, GCD</dd></div>
@@ -106,17 +118,21 @@
       </dl>
     </section>
 
-    <section aria-labelledby="links-title">
-      <h2 id="links-title">Elsewhere</h2>
-      <ul class="links">
-        <li><a href="https://www.linkedin.com/in/nicovalentini"><span>LinkedIn</span><span>nicovalentini</span></a></li>
-        <li><a href="https://github.com/nicovma"><span>GitHub</span><span>nicovma</span></a></li>
-        <li><a href="https://www.instagram.com/nicovma"><span>Instagram</span><span>travel stories</span></a></li>
-        <li><a href="https://open.spotify.com/playlist/4KBV8zxoHZipRVHmph5mvn"><span>Spotify</span><span>Coding playlist</span></a></li>
-      </ul>
-    </section>
-
-    <footer>La Plata, Argentina</footer>
+    <div class="band-alt">
+      <section class="wrap split" aria-labelledby="links-title">
+        <h2 id="links-title">Elsewhere</h2>
+        <ul class="content group links">
+          <li><a href="https://www.linkedin.com/in/nicovalentini"><span class="name">LinkedIn</span><span class="handle">nicovalentini</span><span class="chev" aria-hidden="true">›</span></a></li>
+          <li><a href="https://github.com/nicovma"><span class="name">GitHub</span><span class="handle">nicovma</span><span class="chev" aria-hidden="true">›</span></a></li>
+          <li><a href="https://www.instagram.com/nicovma"><span class="name">Instagram</span><span class="handle">travel stories</span><span class="chev" aria-hidden="true">›</span></a></li>
+          <li><a href="https://open.spotify.com/playlist/4KBV8zxoHZipRVHmph5mvn"><span class="name">Spotify</span><span class="handle">Coding playlist</span><span class="chev" aria-hidden="true">›</span></a></li>
+        </ul>
+      </section>
+    </div>
   </main>
+
+  <footer class="site">
+    <div class="wrap"><span>© 2026 Nico Valentini</span><span>La Plata, Argentina</span></div>
+  </footer>
 </body>
 </html>
