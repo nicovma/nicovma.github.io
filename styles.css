@@ -190,7 +190,6 @@ h1, h2, h3, p, ol, ul, dl, dd { margin: 0; }
 @media (max-width: 560px) {
   .split { padding-top: 64px; padding-bottom: 64px; }
   .hero { padding-top: 56px; padding-bottom: 56px; }
-  .now { padding-top: 48px; }
 }
 .side { display: flex; flex-direction: column; gap: 20px; align-items: flex-start; }
 .prose { display: flex; flex-direction: column; gap: 18px; font-size: 19px; line-height: 1.55; }
@@ -207,26 +206,6 @@ h1, h2, h3, p, ol, ul, dl, dd { margin: 0; }
 }
 .translation summary::-webkit-details-marker { display: none; }
 .translation div { display: flex; flex-direction: column; gap: 14px; padding-top: 12px; color: var(--ink-2); }
-
-/* Bloque "Now" */
-.now { padding-top: 72px; }
-.now a {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 20px 28px;
-  padding: 28px 32px;
-  border-radius: 20px;
-  background: var(--ink);
-  color: var(--bg);
-}
-.now a:hover { text-decoration: none; }
-.now svg { flex: 0 0 56px; }
-.now .text { flex: 1 1 320px; display: flex; flex-direction: column; gap: 4px; }
-.now .label { font-size: 13px; font-weight: 600; letter-spacing: 0.04em; opacity: 0.7; }
-.now .title { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; }
-.now .desc { font-size: 16px; line-height: 1.45; opacity: 0.8; }
-.now .go { font-size: 17px; font-weight: 500; }
 
 /* Listas agrupadas tipo Ajustes */
 .group { list-style: none; padding: 0; margin: 0; background: var(--bg-2); border-radius: 14px; overflow: hidden; }
@@ -271,5 +250,3 @@ footer.site .wrap {
   font-size: 13px;
   color: var(--ink-2);
 }
-
-@media (max-width: 560px) { .now { padding-top: 48px; } }
